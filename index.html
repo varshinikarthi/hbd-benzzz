@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Happy Birthday 🎉</title>
+
+<style>
+body{
+background:pink;
+text-align:center;
+font-family:Arial;
+}
+
+h1{
+color:white;
+font-size:40px;
+}
+
+button{
+padding:12px 20px;
+font-size:18px;
+border:none;
+border-radius:20px;
+background:#ff4d88;
+color:white;
+margin:10px;
+cursor:pointer;
+}
+
+img{
+width:200px;
+margin:10px;
+border-radius:15px;
+box-shadow:0 0 10px white;
+}
+
+.gallery{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+}
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+</head>
+
+<body>
+
+<h1>🎉 Happy Birthday da alagan🎉</h1>
+
+<p>Wishing you a day filled with happiness and laughter 💗</p>
+<button onclick="playSong()">▶ Play Song</button>
+<div id="spotifyPlayer" style="display:none; margin-top:20px;">
+
+<iframe style="border-radius:12px"
+ src="https://open.spotify.com/embed/track/49kvR4GkxBfMLSqR7HNMu7?utm_source=generator" width="50%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>"
+</div>
+
+<h2>📷 un alagai kaanboma??😂</h2>
+
+<div class="gallery">
+
+<img src="https://i.ibb.co/7tKKh6XL/IMG-20260312-210809-149.jpg">
+
+<img src="https://i.ibb.co/W456JhS7/IMG-20260312-210918-319.jpg">
+
+<img src="https://i.ibb.co/YFs84kyB/IMG-20260312-210802-913.jpg">
+
+</div>
+
+<h2>💌 Special Message</h2>
+
+<p>
+benzeyy💙
+last yr oru schlamte iruntha namba ipa best frd ah irukom lifelong ithey irukanumnu 
+nenaikuren..✨enaku epaiyumey oru dbt irukum nee unmaiyave bestfrd enna nenaikuriyanu
+nee nenaikuriyo illaiyo but na nenaikuren,un life la nee nenachuthula nadakanum
+nadakum but konja naal wait pannu.unaku oru male bestfrd illanu nenaikurila
+unna innum yarum crt ah purinjukala oru naal kandipa oruthavanga varunga 
+nee ithana naal wait pannathuku worth it apdinu feel pannuva.
+naanum neeyum lusu mathiri 😂dailyum pesitu kalaichutu nallarukum ipadiye 
+irukanum lusu mathiri 😂, namba lifelong frd ah irukunam epadina ellarum damh still they are together
+as frd 💙nu sollura aalavuku,nee perfect vera elathulaiyum athey mathiri iru nallathutha.
+unaku sikiram kovam varathu vanthalum sikiram poirum na intha vishayatha unkitta
+irunthu kathukanumnu nenacha thing,aprm sir ku vera vayasu aaguthu nyabagam irukutum...
+aprm oru 3 wish sonnila atha namba rendu perum senthu neravethuvom ok va..
+You are not just my friend, you are one of the best memories in my life✨  
+Thank you for always being there.  
+Happy Birthday and stay happy always! 🎉
+</p>
+
+<h2>🎂 Cut the Cake</h2>
+
+<div id="cake" onclick="cutCake()" style="font-size:100px; cursor:pointer;">
+🎂
+</div>
+
+<p id="cakeMessage"></p>
+
+<script>
+function playSong(){
+document.getElementById("spotifyPlayer").style.display="block";
+}
+function cutCake(){
+
+document.getElementById("cake").innerHTML="🍰";
+
+document.getElementById("cakeMessage").innerHTML="🎉 Cake Cut! Happy Birthday! 🎉";
+
+}
+
+</script>
+
+</body>
+</html>
